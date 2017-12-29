@@ -56,8 +56,8 @@ class PythonOrgSearch(unittest.TestCase):
         actual_result = driver.find_element_by_css_selector("#sub-total + .col-sm-6.text-right >.ng-binding").get_attribute('innerHTML')
         actual_result = actual_result.replace("$", "")
         print(actual_result)
-        actual_result_price = float(actual_result.replace("$", ""))
-        self.assertIn(self.EXPECTED_RESULT, actual_result_price)
+        actual_result_price = float(actual_result)
+        self.assertEqual(self.EXPECTED_RESULT, actual_result_price)
 
     def tearDown(self):
         self.driver.close()

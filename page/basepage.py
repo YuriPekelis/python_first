@@ -32,3 +32,6 @@ class BasePage(ABC):
     @abstractmethod
     def get_total(self):
         pass
+
+    def _refresh_page (self):
+        self._driver.refresh()

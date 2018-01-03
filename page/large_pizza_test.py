@@ -6,14 +6,15 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
+from page.text_utils import TextUtils
+from .genie import GenieExtension
 from .operations import Operations
-from .difdata import DiffData
+from .difdata_pizza import DiffDataPizza
 import time
 
 
 class PythonOrgSearch(unittest.TestCase):
     GENIE_PATHNAME = "c:/AutomationTools/genie.crx"
-    EXPECTED_RESULT = 7.99
 
     def setUp(self):
         chrome_opt = Options()
@@ -24,40 +25,45 @@ class PythonOrgSearch(unittest.TestCase):
 
     def test_large_pizza(self):
         driver = self.driver
-        driver.get("https://www.pizzahut.com/index.php#/menu/pizza/popular-pizzas")
+        driver.get(DiffDataPizza.START_URL)
         operations = Operations()
-        operations.click_element(driver.find_element_by_id(DiffData.MENU_BTN_ID))
-        operations.click_element(driver.find_element_by_id(DiffData.PIZZA_SECTION_BTN_ID))
-        operations.click_element(driver.find_element_by_xpath(DiffData.CHEESE_PIZZA_ORDER_NOW_BTN_XPATH))
-        operations.click_element(driver.find_element_by_id(DiffData.CARRYOUT_BTN_ID))
-        operations.input_fld(driver.find_element_by_css_selector(DiffData.ZIP_CODE_FLD_CSS), DiffData.ZIP_CODE)
-        operations.click_element(driver.find_element_by_id(DiffData.FIND_A_STORE_BTN_ID))
-        for current_location_block in driver.find_elements_by_css_selector(DiffData.LOCATIONS_BLOCKS_CSS):
+        operations.click_element(driver.find_element_by_id(DiffDataPizza.MENU_BTN_ID))
+        operations.click_element(driver.find_element_by_id(DiffDataPizza.PIZZA_SECTION_BTN_ID))
+        operations.click_element(driver.find_element_by_xpath(DiffDataPizza.CHEESE_PIZZA_ORDER_NOW_BTN_XPATH))
+        operations.click_element(driver.find_element_by_id(DiffDataPizza.CARRYOUT_BTN_ID))
+        operations.fill_field_with_text(driver.find_element_by_css_selector(DiffDataPizza.ZIP_CODE_FLD_CSS),
+                                        DiffDataPizza.ZIP_CODE)
+        operations.click_element(driver.find_element_by_id(DiffDataPizza.FIND_A_STORE_BTN_ID))
+        for current_location_block in driver.find_elements_by_css_selector(DiffDataPizza.LOCATIONS_BLOCKS_CSS):
             # location_number_element = current_location_block.find_element_by_css_selector(DiffData.LOCATION_NUMBER_IN_BLOCK_CSS)
             # location_number = location_number_element.get_attribute(DiffData.INNER_HTML)
-            location_number = current_location_block.find_element_by_css_selector(DiffData.LOCATION_NUMBER_IN_BLOCK_CSS) \
-                .get_attribute(DiffData.INNER_HTML)
-            if (location_number == DiffData.NUMBER_ONE):
+            location_number = operations.get_element_text(
+                current_location_block.find_element_by_css_selector(DiffDataPizza.LOCATION_NUMBER_IN_BLOCK_CSS))
+            if (location_number == DiffDataPizza.NUMBER_ONE):
                 # operations.click_element(current_location_block.find_element_by_class_name\
                 #                              (DiffData.PRE_ORDER_BTN_INSIDE_BLOCK_CLS))
                 operations.click_element(current_location_block.find_element_by_css_selector( \
-                    DiffData.PRE_ORDER_BTN_INSIDE_BLOCK_CSS))
+                    DiffDataPizza.PRE_ORDER_BTN_INSIDE_BLOCK_CSS))
                 break;
         WebDriverWait(driver, 10).until(
-            (EC.visibility_of_element_located((By.ID, DiffData.CHEESE_PIZZA_SIZE_DROPDOWN_ID))))
-        operations.select_option_by_text(Select(driver.find_element_by_id(DiffData.CHEESE_PIZZA_SIZE_DROPDOWN_ID)), \
-                                         DiffData.LARGE)
-        operations.click_element(driver.find_element_by_id(DiffData.ADD_TO_ORDER_BTN_ID))
-        operations.click_element(driver.find_element_by_xpath(DiffData.CART_BTN_XPATH))
-        shadow_root = driver.execute_script('return arguments[0].shadowRoot', \
-                                            driver.find_element_by_id(DiffData.GENIE_CONTAINER_ID))
-        operations.click_element(shadow_root.find_element_by_css_selector(DiffData.APPLY_SAVINGS_BTN))
-        operations.click_element(shadow_root.find_element_by_css_selector(DiffData.CONTINUE_GENIE_BTN_CSS))
-        actual_result = driver.find_element_by_css_selector("#sub-total + .col-sm-6.text-right >.ng-binding").get_attribute('innerHTML')
-        actual_result = actual_result.replace("$", "")
-        print(actual_result)
-        actual_result_price = float(actual_result)
-        self.assertEqual(self.EXPECTED_RESULT, actual_result_price)
+            (EC.visibility_of_element_located((By.ID, DiffDataPizza.CHEESE_PIZZA_SIZE_DROPDOWN_ID))))
+        operations.select_option_by_text(
+            Select(driver.find_element_by_id(DiffDataPizza.CHEESE_PIZZA_SIZE_DROPDOWN_ID)), \
+            DiffDataPizza.LARGE)
+        operations.click_element(driver.find_element_by_id(DiffDataPizza.ADD_TO_ORDER_BTN_ID))
+        operations.click_element(driver.find_element_by_xpath(DiffDataPizza.CART_BTN_XPATH))
+        start_sum = TextUtils.extract_price_from_text(operations.get_element_text(
+            driver.find_element_by_css_selector(DiffDataPizza.SUBTOTAL_ORDER_SUM)))
+        genie = GenieExtension(self.driver, self.operations)
+        genie.apply_savings()
+        final_sum = TextUtils.extract_price_from_text(operations.get_element_text(
+            driver.find_element_by_css_selector(DiffDataPizza.SUBTOTAL_ORDER_SUM)))
+        # print ("start sum {}".format(start_sum))
+        # print ("discount {}".format(genie.get_price_discount()))
+        # print ("final sum {}".format(final_sum))
+        self.assertEqual(start_sum - genie.get_price_discount(), final_sum)
+        self.assertTrue(genie.is_close_btn_found() or genie.is_close_btn_found())
+        print(genie.get_result_message(start_sum, final_sum))
 
     def tearDown(self):
         self.driver.close()

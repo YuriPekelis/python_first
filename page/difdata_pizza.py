@@ -1,4 +1,5 @@
-class DiffData:
+class DiffDataPizza:
+    START_URL = "https://www.pizzahut.com/index.php#/menu/pizza/popular-pizzas"
     MENU_BTN_ID = "lg-nav-menu"
     PIZZA_SECTION_BTN_ID = "lg-nav-pizza"
     CHEESE_PIZZA_ORDER_NOW_BTN_XPATH = "//a[@class ='btn btn-primary btnModal'][ancestor::div[@id='tile-cheese-pizza']]"
@@ -14,11 +15,8 @@ class DiffData:
     CHEESE_PIZZA_SIZE_DROPDOWN_ID = "size-cheese-pizza"
     ADD_TO_ORDER_BTN_ID = "ato-cheese-pizza"
     CART_BTN_XPATH = "//a[@class='ph-ghost-link'][preceding-sibling::div[@id='cart-quantity-icon']]"
-    GENIE_CONTAINER_ID = "__genie_container"
-    APPLY_SAVINGS_BTN = ".rmnGenie-button.qa-test-codes"
-    CONTINUE_GENIE_BTN_CSS = ".qa-go-to-checkout.rmnGenie-button"
+    SUBTOTAL_ORDER_SUM = "#sub-total + .col-sm-6.text-right >.ng-binding"
 
-    INNER_HTML = "innerHTML"
     NUMBER_ONE = "1"
     LARGE = "Large"
 

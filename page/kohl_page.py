@@ -5,6 +5,7 @@ from page.basepage import BasePage
 
 class KohlPage (BasePage):
 
+
     __START_URL = "https://www.kohls.com/"
     __PRODUCT_NAME = "Cuddl Duds 6-Piece Red Plaid Flannel Comforter Set"
     __SEARCH_FIELD_CSS = "#search"
@@ -12,8 +13,6 @@ class KohlPage (BasePage):
     __SIZE_BTNS_CSS = ".pdp-product-size > .pdp-waist-size_info.clearfix > a"
     __ADD_TO_BAG_BTN_CSS = "#addtobagID"
     __VIEW_BAG_BTN_CSS = ".viewBag_ghr"
-    # __CHECKOUT_BTN_CSS = ".checkout-link"#"#checkout-container > a:nth-child(1)"
-    # __GUEST_CHECKOUT_BTN_ID = "LPGuestCheckout"
     __TOTAL_SUM_CSS = "#totalcharges"
 
 

@@ -1,8 +1,5 @@
-from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
-from . import operations
 from .text_utils import TextUtils
 
 
@@ -24,7 +21,8 @@ class GenieExtension:
 
     def __init__(self, driver, operations):
         """ :param driver: Webdriver
-            :param operations instance for work with WebElements"""
+            :param operations instance for work with WebElements
+            """
         self.__driver = driver
         self.__operations = operations
 
@@ -62,7 +60,7 @@ class GenieExtension:
         return self.__operations.get_element_text(self.__get_price_discount_element())
 
     def apply_savings(self):
-        """ Performs coupon`s search process"""
+        """Performs coupon`s search process"""
         self.__operations.click_element(self.__get_apply_savings_btn())
         counter = 0
         while counter < 60 or not self.__get_shadow_root().find_elements_by_css_selector(self.__BUTTON_BLOCK_CSS):
@@ -80,23 +78,23 @@ class GenieExtension:
         self.__operations.click_element(result_btn)
 
     def is_continue_btn_found(self):
-        """ :returns true if coupon has been found and search process was finished"""
+        """:returns true if coupon has been found and search process was finished"""
         return self.__is_continue_btn_found
 
     def is_close_btn_found(self):
-        """ :returns true if coupon hasn't been found and search process was finished"""
+        """:returns true if coupon hasn't been found and search process was finished"""
         return self.__is_close_btn_found
 
     def get_price_discount(self):
-        """ :returns price discount, if a coupon has not been found then 0.0"""
+        """:returns price discount, if a coupon has not been found then 0.0"""
         return self.__price_discount
 
     def get_coupon_name(self):
-        """ :returns found coupon's name"""
+        """:returns found coupon's name"""
         return self.__coupon_name
 
     def get_result_message(self, start_sum, final_sum):
-        """ :returns message about result"""
+        """:returns message about result"""
         result = None
         if self.__is_continue_btn_found:
             result = "The Coupon {} was found. Start sum = {}, discount= {}, final sum = {}" \

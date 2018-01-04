@@ -2,6 +2,8 @@ from abc import ABC, abstractmethod
 
 
 class BasePage(ABC):
+
+
     _driver = None
     _operations = None
 

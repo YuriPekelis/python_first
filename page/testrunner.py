@@ -1,10 +1,13 @@
 import unittest
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+
 from page.operations import Operations
 
 
-class TestRunner (unittest.TestCase):
+class TestRunner(unittest.TestCase):
+
 
     GENIE_PATHNAME = "/home/ypeke/genie.crx"
 

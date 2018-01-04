@@ -5,8 +5,8 @@ from .genie import GenieExtension
 
 class PythonOrgSearch(TestRunner):
 
+
     def test_large_pizza(self):
-        # operations = Operations()
         pizzahut_page = PizzaHutPage (self.driver, self.operations)
         pizzahut_page.get_homepage()
         pizzahut_page.search_product()

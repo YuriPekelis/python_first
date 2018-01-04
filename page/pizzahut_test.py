@@ -1,28 +1,13 @@
-import unittest
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-
 from page.pizzahut_page import PizzaHutPage
-from page.text_utils import TextUtils
+from page.testrunner import TestRunner
 from .genie import GenieExtension
-from .operations import Operations
-from .difdata_pizza import DiffDataPizza
-import time
 
 
-class PythonOrgSearch(unittest.TestCase):
-    GENIE_PATHNAME = "/home/ypeke/genie.crx"
-
-    def setUp(self):
-        chrome_opt = Options()
-        chrome_opt.add_extension(self.GENIE_PATHNAME)
-        self.driver = webdriver.Chrome(chrome_options=chrome_opt)
-        self.driver.implicitly_wait(10)
-        self.operations = Operations()
+class PythonOrgSearch(TestRunner):
 
     def test_large_pizza(self):
-        operations = Operations()
-        pizzahut_page = PizzaHutPage (self.driver, operations)
+        # operations = Operations()
+        pizzahut_page = PizzaHutPage (self.driver, self.operations)
         pizzahut_page.get_homepage()
         pizzahut_page.search_product()
         pizzahut_page.slelect_product()
@@ -38,10 +23,3 @@ class PythonOrgSearch(unittest.TestCase):
         self.assertEqual(start_sum - genie.get_price_discount(), final_sum)
         self.assertTrue(genie.is_close_btn_found() or genie.is_continue_btn_found())
         print(genie.get_result_message(start_sum, final_sum))
-
-    def tearDown(self):
-        self.driver.close()
-
-
-if __name__ == "__main__":
-    unittest.main()

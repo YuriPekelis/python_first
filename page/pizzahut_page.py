@@ -4,6 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from page.text_utils import TextUtils
 from page.basepage import BasePage
+import time
 
 class PizzaHutPage (BasePage):
 
@@ -31,10 +32,12 @@ class PizzaHutPage (BasePage):
 
 
     def get_homepage(self):
-        """Add product to cart"""
+        """Open home page"""
         self._driver.get(self.__START_URL)
 
+
     def search_product(self):
+        """Performs operations for choosing product"""
         self._operations.click_element(self._driver.find_element_by_css_selector(self.__MENU_BTN_CSS))
         self._operations.click_element(self._driver.find_element_by_css_selector(self.__PIZZA_SECTION_BTN_CSS))
         self._operations.click_element(self._driver.find_element_by_css_selector(self.__CHEESE_PIZZA_ORDER_NOW_BTN_CSS))
@@ -42,35 +45,24 @@ class PizzaHutPage (BasePage):
         self._operations.fill_field_with_text(self._driver.find_element_by_css_selector(self.__ZIP_CODE_FIELD_CSS),self.__ZIP_CODE)
         self._operations.click_element(self._driver.find_element_by_css_selector(self.__FIND_A_STORE_BTN_CSS))
         self._operations.click_element(self._driver.find_element_by_css_selector(self.__ORDER_CARRYOUT_BTN_CSS))
-        
-        # for current_location_block in self._driver.find_elements_by_css_selector(self.__LOCATIONS_BLOCKS_CSS):
-        #     # location_number_element = current_location_block.find_element_by_css_selector(DiffData.LOCATION_NUMBER_IN_BLOCK_CSS)
-        #     # location_number = location_number_element.get_attribute(DiffData.INNER_HTML)
-        #     location_number = operations.get_element_text(
-        #         current_location_block.find_element_by_css_selector(self.__LOCATION_NUMBER_IN_BLOCK_CSS))
-        #     if (location_number == self.__NUMBER_ONE):
-        #         # operations.click_element(current_location_block.find_element_by_class_name\
-        #         #                              (DiffData.PRE_ORDER_BTN_INSIDE_BLOCK_CLS))
-        #         operations.click_element(current_location_block.find_element_by_css_selector( \
-        #             self.__PRE_ORDER_BTN_INSIDE_BLOCK_CSS))
-        #         break;
 
     def slelect_product(self):
+        """Performs operations for selecting product's parameters"""
         WebDriverWait(self._driver, 2)
         self._operations.select_option_by_text(
             Select(self._driver.find_element_by_css_selector(self.__CHEESE_PIZZA_SIZE_DROPDOWN_CSS)), \
             self.__LARGE)
         
     def add_product(self):
+        """Add product to cart"""
         self._operations.click_element(self._driver.find_element_by_css_selector(self.__ADD_TO_ORDER_BTN_CSS))
 
     def get_to_cart(self):
+        """Performs operations for going to cart"""
         self._operations.click_element(self._driver.find_element_by_css_selector(self.__CART_BTN_CSS))
 
     def get_total(self):
-        WebDriverWait(self._driver, 10).until(
-            (EC.visibility_of_element_located((By.CSS_SELECTOR, self.__TOTAL_ORDER_SUM_CSS))))
+        """:returns total sum of cart"""
+        time.sleep(2)
         return TextUtils.extract_price_from_text(self._operations.get_element_text(
             self._driver.find_element_by_css_selector(self.__TOTAL_ORDER_SUM_CSS)))
-        # return TextUtils.extract_price_from_text(self._operations.get_element_text(
-        #     self._driver.find_element_by_css_selector(self.__SUBTOTAL_ORDER_SUM_CSS)))

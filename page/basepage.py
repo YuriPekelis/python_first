@@ -2,13 +2,11 @@ from abc import ABC, abstractmethod
 
 
 class BasePage(ABC):
-
-
-    _driver = None
+    _driver_wrapper = None
     _operations = None
 
-    def __init__(self, driver, operations):
-        self._driver = driver
+    def __init__(self, driver_wrapper, operations):
+        self._driver_wrapper = driver_wrapper
         self._operations = operations
 
     @abstractmethod
@@ -20,7 +18,7 @@ class BasePage(ABC):
         pass
 
     @abstractmethod
-    def slelect_product(self):
+    def select_product(self):
         pass
 
     @abstractmethod

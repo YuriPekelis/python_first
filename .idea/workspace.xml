@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0263eeeb-6e97-4759-932d-b3ff7d10365f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/page/bodybuilding_page.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/page/bodybuilding_test.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/page/creds.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/page/driver_wrapper.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/page/hottopic_page.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/page/hottopic_test.py" />
-      <change beforePath="$PROJECT_DIR$/page/basepage.py" afterPath="$PROJECT_DIR$/page/basepage.py" />
-      <change beforePath="$PROJECT_DIR$/page/genie.py" afterPath="$PROJECT_DIR$/page/genie.py" />
-      <change beforePath="$PROJECT_DIR$/page/kohl_page.py" afterPath="$PROJECT_DIR$/page/kohl_page.py" />
-      <change beforePath="$PROJECT_DIR$/page/kohls_test.py" afterPath="$PROJECT_DIR$/page/kohls_test.py" />
-      <change beforePath="$PROJECT_DIR$/page/operations.py" afterPath="$PROJECT_DIR$/page/operations.py" />
-      <change beforePath="$PROJECT_DIR$/page/pizzahut_page.py" afterPath="$PROJECT_DIR$/page/pizzahut_page.py" />
-      <change beforePath="$PROJECT_DIR$/page/pizzahut_test.py" afterPath="$PROJECT_DIR$/page/pizzahut_test.py" />
+    <list default="true" id="0263eeeb-6e97-4759-932d-b3ff7d10365f" name="Default" comment="Driver is hidden inside Driver_Wrapper">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/page/bodybuilding_page.py" afterPath="$PROJECT_DIR$/page/page_bodybuilding.py" />
+      <change beforePath="$PROJECT_DIR$/page/bodybuilding_test.py" afterPath="$PROJECT_DIR$/page/test_bodybuilding.py" />
+      <change beforePath="$PROJECT_DIR$/page/driver_wrapper.py" afterPath="$PROJECT_DIR$/page/driver_wrapper.py" />
+      <change beforePath="$PROJECT_DIR$/page/hottopic_page.py" afterPath="$PROJECT_DIR$/page/page_hottopic.py" />
+      <change beforePath="$PROJECT_DIR$/page/hottopic_test.py" afterPath="$PROJECT_DIR$/page/test_hottopic.py" />
+      <change beforePath="$PROJECT_DIR$/page/kohl_page.py" afterPath="$PROJECT_DIR$/page/page_kohl.py" />
+      <change beforePath="$PROJECT_DIR$/page/kohls_test.py" afterPath="$PROJECT_DIR$/page/test_kohls.py" />
+      <change beforePath="$PROJECT_DIR$/page/pizzahut_page.py" afterPath="$PROJECT_DIR$/page/page_pizzahut.py" />
+      <change beforePath="$PROJECT_DIR$/page/pizzahut_test.py" afterPath="$PROJECT_DIR$/page/test_pizzahut.py" />
       <change beforePath="$PROJECT_DIR$/page/testrunner.py" afterPath="$PROJECT_DIR$/page/testrunner.py" />
-      <change beforePath="$PROJECT_DIR$/page/text_utils.py" afterPath="$PROJECT_DIR$/page/text_utils.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,8 +26,8 @@
       <file leaf-file-name="testrunner.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/testrunner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-324">
-              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="51" selection-end-column="36" />
+            <state relative-caret-position="1332">
+              <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="76" selection-end-column="57" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -49,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pizzahut_page.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/pizzahut_page.py">
+      <file leaf-file-name="page_pizzahut.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/page_pizzahut.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
+            <state relative-caret-position="972">
               <caret line="54" column="37" lean-forward="false" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="37" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -61,20 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="kohls_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/kohls_test.py">
+      <file leaf-file-name="page_kohl.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/page_kohl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="kohl_page.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/kohl_page.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
+            <state relative-caret-position="504">
               <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
@@ -83,20 +69,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hottopic_test.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/hottopic_test.py">
+      <file leaf-file-name="test_hottopic.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/test_hottopic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="22" />
+            <state relative-caret-position="288">
+              <caret line="18" column="74" lean-forward="false" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hottopic_page.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/page/hottopic_page.py">
+      <file leaf-file-name="test_bodybuilding.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/test_bodybuilding.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
+            <state relative-caret-position="198">
+              <caret line="11" column="48" lean-forward="false" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#45#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="page_hottopic.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/page/page_hottopic.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
               <caret line="39" column="36" lean-forward="false" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
@@ -108,8 +106,8 @@
       <file leaf-file-name="genie.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/genie.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="63" column="65" lean-forward="true" selection-start-line="63" selection-start-column="65" selection-end-line="63" selection-end-column="65" />
+            <state relative-caret-position="1458">
+              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -118,7 +116,7 @@
       <file leaf-file-name="operations.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/operations.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2304">
+            <state relative-caret-position="2250">
               <caret line="128" column="47" lean-forward="false" selection-start-line="128" selection-start-column="47" selection-end-line="128" selection-end-column="47" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -130,8 +128,8 @@
       <file leaf-file-name="driver_wrapper.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/page/driver_wrapper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
-              <caret line="68" column="26" lean-forward="false" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+            <state relative-caret-position="270">
+              <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -206,6 +204,7 @@
         <option value="$PROJECT_DIR$/page/operations.py" />
         <option value="$PROJECT_DIR$/page/driver_wrapper.py" />
         <option value="$PROJECT_DIR$/page/testrunner.py" />
+        <option value="$PROJECT_DIR$/page/test_bodybuilding.py" />
         <option value="$PROJECT_DIR$/page/creds.py" />
       </list>
     </option>
@@ -231,8 +230,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -258,6 +255,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -287,8 +286,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in bodybuilding_test.py">
-    <configuration name="Unittests for page.pizzahut_test.PythonOrgSearch.test_large_pizza" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="Unittests for page.test_pizzahut.PythonOrgSearch.test_large_pizza" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -299,10 +298,10 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python_first" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;page.pizzahut_test.PythonOrgSearch.test_large_pizza&quot;" />
+      <option name="_new_target" value="&quot;page.test_pizzahut.PythonOrgSearch.test_large_pizza&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="Unittests in bodybuilding_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_bodybuilding.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -313,10 +312,10 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python_first" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/page/bodybuilding_test.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/page/test_bodybuilding.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="Unittests in hottopic_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_hottopic.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -327,10 +326,10 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python_first" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/page/hottopic_test.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/page/test_hottopic.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="Unittests in kohls_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_kohls.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -341,10 +340,10 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python_first" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/page/kohls_test.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/page/test_kohls.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <configuration name="Unittests in pizzahut_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test_pizzahut.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs />
@@ -355,23 +354,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="python_first" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/page/pizzahut_test.py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/page/test_pizzahut.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in kohls_test.py" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in pizzahut_test.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in bodybuilding_test.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in hottopic_test.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for page.pizzahut_test.PythonOrgSearch.test_large_pizza" />
+      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_kohls.py" />
+      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_pizzahut.py" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test_bodybuilding.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_hottopic.py" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for page.test_pizzahut.PythonOrgSearch.test_large_pizza" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in bodybuilding_test.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in hottopic_test.py" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in kohls_test.py" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in pizzahut_test.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for page.pizzahut_test.PythonOrgSearch.test_large_pizza" />
+        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in test_hottopic.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test_bodybuilding.py" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in test_kohls.py" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in test_pizzahut.py" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests for page.test_pizzahut.PythonOrgSearch.test_large_pizza" />
       </list>
     </recent_temporary>
   </component>
@@ -442,15 +441,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_bodybuilding_test_py - 2018.01.09 at 19h 24m 20s.xml">
-      <configuration name="Unittests in bodybuilding_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_bodybuilding_test_py - 2018.01.09 at 19h 24m 51s.xml">
-      <configuration name="Unittests in bodybuilding_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_bodybuilding_test_py - 2018.01.09 at 20h 00m 00s.xml">
-      <configuration name="Unittests in bodybuilding_test.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_bodybuilding_test_py - 2018.01.09 at 20h 00m 57s.xml">
       <configuration name="Unittests in bodybuilding_test.py" configurationId="tests" />
     </history-entry>
@@ -460,10 +450,13 @@
     <history-entry file="Unittests_in_bodybuilding_test_py - 2018.01.09 at 20h 38m 42s.xml">
       <configuration name="Unittests in bodybuilding_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_hottopic_test_py - 2018.01.09 at 19h 22m 46s.xml">
+    <history-entry file="Unittests_in_hottopic_test_py - 2018.01.09 at 20h 36m 22s.xml">
       <configuration name="Unittests in hottopic_test.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_hottopic_test_py - 2018.01.09 at 20h 36m 22s.xml">
+    <history-entry file="Unittests_in_hottopic_test_py - 2018.01.10 at 15h 31m 52s.xml">
+      <configuration name="Unittests in hottopic_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_hottopic_test_py - 2018.01.10 at 15h 34m 53s.xml">
       <configuration name="Unittests in hottopic_test.py" configurationId="tests" />
     </history-entry>
     <history-entry file="Unittests_in_kohls_test_py - 2018.01.09 at 20h 36m 12s.xml">
@@ -471,6 +464,12 @@
     </history-entry>
     <history-entry file="Unittests_in_pizzahut_test_py - 2018.01.09 at 20h 35m 22s.xml">
       <configuration name="Unittests in pizzahut_test.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_bodybuilding_py - 2018.01.11 at 12h 30m 15s.xml">
+      <configuration name="Unittests in test_bodybuilding.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_test_hottopic_py - 2018.01.11 at 12h 34m 29s.xml">
+      <configuration name="Unittests in test_hottopic.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -480,7 +479,6 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18867925" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32924336" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -494,6 +492,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -512,44 +511,42 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/page/pizzahut_page.py</url>
+          <url>file://$PROJECT_DIR$/page/page_pizzahut.py</url>
           <line>32</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/page/genie.py</url>
-          <line>68</line>
-          <option name="timeStamp" value="45" />
+          <url>file://$PROJECT_DIR$/page/test_hottopic.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="48" />
+      <option name="time" value="50" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/page/pizzahut_test.py">
+    <entry file="file://$PROJECT_DIR$/page/test_pizzahut.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/bodybuilding_page.py">
+    <entry file="file://$PROJECT_DIR$/page/page_bodybuilding.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
           <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/hottopic_page.py">
+    <entry file="file://$PROJECT_DIR$/page/page_hottopic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="43" />
-          <folding />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -557,7 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -565,11 +561,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="53" lean-forward="false" selection-start-line="4" selection-start-column="53" selection-end-line="4" selection-end-column="53" />
-          <folding />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/kohl_page.py">
+    <entry file="file://$PROJECT_DIR$/page/page_kohl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="41" />
@@ -583,44 +581,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/pizzahut_page.py">
+    <entry file="file://$PROJECT_DIR$/page/page_pizzahut.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="10" column="43" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/test_hottopic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/hottopic_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#43#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/bodybuilding_test.py">
+    <entry file="file://$PROJECT_DIR$/page/test_bodybuilding.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#51#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/difdata_kohls.py" />
-    <entry file="file://$PROJECT_DIR$/page/pizzahut_test.py">
+    <entry file="file://$PROJECT_DIR$/page/test_pizzahut.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -635,7 +631,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -647,7 +642,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/kohl_page.py">
+    <entry file="file://$PROJECT_DIR$/page/page_kohl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
@@ -657,7 +652,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/kohls_test.py">
+    <entry file="file://$PROJECT_DIR$/page/test_kohls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="22" column="64" lean-forward="false" selection-start-line="22" selection-start-column="64" selection-end-line="22" selection-end-column="64" />
@@ -703,7 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="244">
           <caret line="34" column="37" lean-forward="false" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -711,7 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
           <caret line="67" column="4" lean-forward="false" selection-start-line="67" selection-start-column="4" selection-end-line="67" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -719,7 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1908">
           <caret line="106" column="30" lean-forward="false" selection-start-line="106" selection-start-column="15" selection-end-line="106" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -727,7 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -735,7 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -743,7 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -751,7 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="185">
           <caret line="63" column="0" lean-forward="false" selection-start-line="63" selection-start-column="0" selection-end-line="63" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -759,7 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -767,7 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
           <caret line="599" column="0" lean-forward="false" selection-start-line="599" selection-start-column="0" selection-end-line="599" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -775,25 +761,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/bodybuilding_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="15" column="50" lean-forward="false" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/bodybuilding_page.py">
+    <entry file="file://$PROJECT_DIR$/page/page_bodybuilding.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="236">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -801,21 +775,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/pizzahut_test.py">
+    <entry file="file://$PROJECT_DIR$/page/test_pizzahut.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/kohls_test.py">
+    <entry file="file://$PROJECT_DIR$/page/test_kohls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
@@ -823,9 +793,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/kohl_page.py">
+    <entry file="file://$PROJECT_DIR$/page/page_kohl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
+        <state relative-caret-position="504">
           <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
@@ -833,17 +803,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/hottopic_test.py">
+    <entry file="file://$PROJECT_DIR$/page/page_hottopic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/page/hottopic_page.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
+        <state relative-caret-position="630">
           <caret line="39" column="36" lean-forward="false" selection-start-line="39" selection-start-column="36" selection-end-line="39" selection-end-column="36" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
@@ -851,19 +813,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/pizzahut_page.py">
+    <entry file="file://$PROJECT_DIR$/page/genie.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="54" column="37" lean-forward="false" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1458">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/operations.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2304">
+        <state relative-caret-position="2250">
           <caret line="128" column="47" lean-forward="false" selection-start-line="128" selection-start-column="47" selection-end-line="128" selection-end-column="47" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -871,30 +831,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/driver_wrapper.py">
+    <entry file="file://$PROJECT_DIR$/page/page_pizzahut.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="68" column="26" lean-forward="false" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+        <state relative-caret-position="972">
+          <caret line="54" column="37" lean-forward="false" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="37" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/page/genie.py">
+    <entry file="file://$PROJECT_DIR$/page/test_hottopic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="63" column="65" lean-forward="true" selection-start-line="63" selection-start-column="65" selection-end-line="63" selection-end-column="65" />
+        <state relative-caret-position="288">
+          <caret line="18" column="74" lean-forward="false" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="74" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/driver_wrapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/page/testrunner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-324">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="51" selection-end-column="36" />
+        <state relative-caret-position="1332">
+          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="76" selection-end-column="57" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/page/test_bodybuilding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="48" lean-forward="false" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>

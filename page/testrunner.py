@@ -1,26 +1,19 @@
 import unittest
 
-from selenium import webdriver
+
 from selenium.webdriver import Proxy
 # from selenium.webdriver.chrome.options import Options
-from selenium.webdriver import ChromeOptions
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-from selenium.webdriver.common.proxy import ProxyType
+
+
 
 from page.operations import Operations
 from page.driver_wrapper import DriverWrapper
-from .creds import Creds
+
 
 
 class TestRunner(unittest.TestCase):
 
-
-
-
-    # GENIE_PATHNAME = "/home/ypeke/genie.crx"
-
     def setUp(self):
-
         # # 1 option - uncomment and add constant`s values for BodyBuilder
         # proxy = Proxy({
         #     'proxyType': 'MANUAL',
@@ -78,16 +71,9 @@ class TestRunner(unittest.TestCase):
         # driver = webdriver.Chrome(desired_capabilities = capabilities, chrome_options=chrome_opt)
 
         ### 3 option - regular webdriver for all tests except bodybuilder
-        chrome_opt = ChromeOptions()
-        chrome_opt.add_extension(Creds.GENIE_PATHNAME)
-        chrome_opt.add_argument("--start-maximized")
-        driver = webdriver.Chrome(chrome_options=chrome_opt)
 
-
-
-
-
-        self.driver_wrapper = DriverWrapper (driver)
+        self.driver_wrapper = DriverWrapper ()
+        self.driver_wrapper.setup_simple_driver()
         self.operations = Operations(self.driver_wrapper)
 
     def tearDown(self):

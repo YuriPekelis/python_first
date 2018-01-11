@@ -1,14 +1,57 @@
 import time
+
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from selenium.webdriver.common.proxy import ProxyType
+from selenium import webdriver
+from selenium.webdriver import ChromeOptions, Proxy
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+
+from .creds import Creds
 
 
 class DriverWrapper:
     __driver = None
 
-    def __init__(self, driver):
-        self.__driver = driver
+    def setup_simple_driver (self):
+        chrome_opt = ChromeOptions()
+        chrome_opt.add_extension(Creds.GENIE_PATHNAME)
+        chrome_opt.add_argument("--start-maximized")
+        self.__driver = webdriver.Chrome(chrome_options=chrome_opt)
+
+    def setup_driver_proxy (self):
+        chrome_opt = ChromeOptions()
+        chrome_opt.add_extension(Creds.GENIE_PATHNAME)
+        chrome_opt.add_argument("--start-maximized")
+        proxy = Proxy({
+            'proxyType': 'MANUAL',
+            'httpProxy': Creds.PROXY,
+            'ftpProxy': Creds.PROXY,
+            'sslProxy': Creds.PROXY,
+            'socksUsername':Creds.PROXY_USER,
+            'socksPassword':Creds.PROXY_PASS,
+            'class': "org.openqa.selenium.Proxy",
+        })
+        capabilities = dict(DesiredCapabilities.CHROME)
+        capabilities['proxy'] = proxy
+
+        proxy = {'address': Creds.PROXY,
+                 'username': Creds.PROXY_USER,
+                 'password': Creds.PROXY_PASS}
+
+        capabilities = dict(DesiredCapabilities.CHROME)
+        capabilities['proxy'] = {'proxyType': 'MANUAL',
+                                 'httpProxy': proxy['address'],
+                                 'ftpProxy': proxy['address'],
+                                 'sslProxy': proxy['address'],
+                                 'noProxy': '',
+                                 'class': "org.openqa.selenium.Proxy",
+                                 'autodetect': False}
+
+        capabilities['proxy']['socksUsername'] = proxy['username']
+        capabilities['proxy']['socksPassword'] = proxy['password']
+        self.__driver = webdriver.Chrome(desired_capabilities = capabilities, chrome_options=chrome_opt)
 
     def open_page(self, url):
         """Open page on browser

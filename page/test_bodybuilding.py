@@ -1,9 +1,16 @@
-from page.bodybuilding_page import BodyBuildingPage
+from page.driver_wrapper import DriverWrapper
+from page.operations import Operations
+from page.page_bodybuilding import BodyBuildingPage
 from page.testrunner import TestRunner
 from .genie import GenieExtension
 
 
 class PythonOrgSearch(TestRunner):
+
+    def setUp(self):
+        self.driver_wrapper = DriverWrapper()
+        self.driver_wrapper.setup_driver_proxy()
+        self.operations = Operations(self.driver_wrapper)
 
     def test_bodybuilding(self):
         bodybuilding_page = BodyBuildingPage(self.driver_wrapper, self.operations)

@@ -1,4 +1,4 @@
-from page.pizzahut_page import PizzaHutPage
+from page.page_pizzahut import PizzaHutPage
 from page.testrunner import TestRunner
 from .genie import GenieExtension
 

@@ -1,4 +1,4 @@
-from page.kohl_page import KohlPage
+from page.page_kohl import KohlPage
 from page.testrunner import TestRunner
 from .genie import GenieExtension
 

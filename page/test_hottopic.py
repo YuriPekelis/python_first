@@ -1,4 +1,4 @@
-from page.hottopic_page import HotTopicPage
+from page.page_hottopic import HotTopicPage
 from page.testrunner import TestRunner
 from .genie import GenieExtension
 

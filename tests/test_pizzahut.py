@@ -1,6 +1,6 @@
 from page.page_pizzahut import PizzaHutPage
-from page.testrunner import TestRunner
-from .genie import GenieExtension
+from tests.testrunner import TestRunner
+from genie.genie import GenieExtension
 
 
 class PythonOrgSearch(TestRunner):
@@ -17,6 +17,6 @@ class PythonOrgSearch(TestRunner):
         genie = GenieExtension(self.driver_wrapper, self.operations)
         genie.apply_savings()
         final_sum = pizzahut_page.get_total()
-        self.assertEqual(start_sum - genie.get_price_discount(), final_sum)
+        self.assertAlmostEqual(start_sum - genie.get_price_discount(), final_sum, delta=0.005)
         self.assertTrue(genie.is_close_btn_found() or genie.is_continue_btn_found())
         print(genie.get_result_message(start_sum, final_sum))

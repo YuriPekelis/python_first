@@ -1,9 +1,6 @@
 import time
 
-from selenium.webdriver.support.ui import Select
-from selenium.webdriver.support.ui import WebDriverWait
-
-from page.text_utils import TextUtils
+from tools.text_utils import TextUtils
 from page.basepage import BasePage
 
 

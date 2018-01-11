@@ -1,4 +1,4 @@
-from page.text_utils import TextUtils
+from tools.text_utils import TextUtils
 from page.basepage import BasePage
 
 

@@ -1,12 +1,4 @@
-import time
-
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.support.select import Select
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-
-from page.text_utils import TextUtils
+from tools.text_utils import TextUtils
 from page.basepage import BasePage
 
 

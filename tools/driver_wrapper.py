@@ -1,14 +1,13 @@
 import time
 
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-from selenium.webdriver.common.proxy import ProxyType
 from selenium import webdriver
 from selenium.webdriver import ChromeOptions, Proxy
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from .creds import Creds
+from tools.creds import Creds
 
 
 class DriverWrapper:

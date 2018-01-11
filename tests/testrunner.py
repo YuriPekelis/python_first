@@ -1,13 +1,7 @@
 import unittest
 
-
-from selenium.webdriver import Proxy
-# from selenium.webdriver.chrome.options import Options
-
-
-
-from page.operations import Operations
-from page.driver_wrapper import DriverWrapper
+from tools.operations import Operations
+from tools.driver_wrapper import DriverWrapper
 
 
 

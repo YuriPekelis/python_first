@@ -1,6 +1,4 @@
-from selenium.webdriver.support.wait import WebDriverWait
-
-from .text_utils import TextUtils
+from tools.text_utils import TextUtils
 
 
 class GenieExtension:
@@ -71,7 +69,6 @@ class GenieExtension:
         while counter < 60 and not self.__is_shadow_element_present_css(self.__BUTTON_BLOCK_CSS):
             self.__driver_wrapper.wait(1)
             counter += 1
-            print(counter)
         result_btn = None
         if self.__is_shadow_element_present_css(self.__CONTINUE_GENIE_BTN_CSS):
             result_btn = self.__get_continue_btn()
